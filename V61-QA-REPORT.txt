@@ -1,0 +1,17 @@
+Fabio Ecosystem v61 QA report
+
+Automated checks performed:
+- 69 HTML pages parsed successfully
+- v61 mobile/platform CSS loaded site-wide
+- Local href/src/link/script/img/source references checked: 0 broken local references
+- Duplicate HTML IDs checked: 0 pages with duplicate IDs
+- v61 JavaScript syntax checked with Node.js: passed
+- Inline JavaScript on new interactive pages checked with Node.js: passed
+- Static Vercel routes preserved with explicit .html links where needed
+- External integrations remain configuration-driven; no API secrets embedded
+
+Important live checks after deployment:
+- First FormSubmit email confirmation if not already activated
+- Test trial lesson and voucher form email delivery
+- Test Vercel deployment on iPhone Safari and Android Chrome
+- Configure bookingUrl / whatsappNumber / aiEndpoint only when real services are available
