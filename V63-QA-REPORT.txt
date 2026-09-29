@@ -1,0 +1,27 @@
+Fabio Ecosystem v63 QA Report
+
+Automated static QA
+- HTML pages parsed: 86
+- Broken local links/assets: 0
+- Files with duplicate HTML IDs: 0
+- JavaScript files checked with node --check: 35
+- JavaScript file syntax failures: 0
+- Inline scripts checked with node --check: 130
+- Inline script syntax failures: 0
+- Search-index entries: 86
+
+Feature QA
+- Dashboard, Daily Mission, Practice Lab, Level Test and Passport pages created.
+- Practice Lab uses existing APP_DATA and VERB_DATA rather than placeholder vocabulary.
+- Seven SEO landing pages created with Course structured data.
+- YouTube Hub links only to the two supplied channel handles.
+- Global search upgraded to search-index-v63.json.
+- Existing external integrations remain credential-safe.
+
+Important external dependencies
+- Generative AI still requires the configured secure backend endpoint.
+- Supabase cross-device sync requires valid Supabase configuration.
+- Stripe/PayPal require the existing live payment configuration.
+- Booking and WhatsApp remain hidden/config-driven until real values are configured.
+- Browser speech synthesis quality and voice availability depend on the user's device/browser.
+- No testimonials, learner counts or qualifications were invented.

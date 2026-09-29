@@ -10,7 +10,7 @@ window.FW61={get,set,toast};
 function searchInit(){
  if(qs('.v61-search-overlay'))return;
  const ov=document.createElement('div');ov.className='v61-search-overlay';ov.innerHTML='<div class="v61-search-box" role="dialog" aria-modal="true" aria-label="Website durchsuchen"><div class="v61-search-head"><input aria-label="Suche" placeholder="Suche in Fabio Ecosystem …"><button class="v61-close" aria-label="Schließen">×</button></div><div class="v61-search-results"><p style="color:#64798b;padding:8px">Tippe mindestens 2 Zeichen.</p></div></div>';document.body.appendChild(ov);
- let index=[];fetch('/search-index-v61.json').then(r=>r.ok?r.json():[]).then(x=>index=x).catch(()=>{});
+ let index=[];fetch('/search-index-v63.json').then(r=>r.ok?r.json():[]).then(x=>index=x).catch(()=>{});
  const input=qs('input',ov), results=qs('.v61-search-results',ov);
  const open=()=>{ov.classList.add('open');document.body.style.overflow='hidden';setTimeout(()=>input.focus(),30)};
  const close=()=>{ov.classList.remove('open');document.body.style.overflow=''};

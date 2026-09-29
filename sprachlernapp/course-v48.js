@@ -10,7 +10,7 @@ function speak(t){if(!('speechSynthesis'in window))return; speechSynthesis.cance
 function shuffled(a){return [...a].sort(()=>Math.random()-.5)}
 let current=1,step=0,answers=[],score=0,locked=false;
 const flag='/shared-assets/flags/'+data.flag+'.svg';
-$('#lw48-name').textContent=data.name;$('#lw48-support').textContent=data.support;$('#lw48-flag').src=flag;document.title='LERNWERK · '+data.name+' Kurs';
+$('#lw48-name').textContent=data.name;const supportEl=$('#lw48-support');if(supportEl) supportEl.textContent=data.support||'';$('#lw48-flag').src=flag;document.title='LERNWERK · '+data.name+' Kurs';
 function stats(){const [s,ls]=langState(),done=Object.keys(ls.completed).length,pct=Math.round(done/data.lessons.length*100);$('#lw48-xp').textContent=ls.xp||0;$('#lw48-done').textContent=done+'/'+data.lessons.length;$('#lw48-pct').textContent=pct+'%';$('#lw48-coursebar').style.width=pct+'%';}
 function isUnlocked(id){const [s,ls]=langState();return id===1||!!ls.completed[id-1]||!!ls.completed[id]}
 function map(){const [s,ls]=langState();const list=$('#lw48-lessons');list.innerHTML=data.lessons.map(l=>{const done=!!ls.completed[l.id],unlock=isUnlocked(l.id);return `<button class="lw48-lesson ${done?'done':''} ${current===l.id?'active':''} ${unlock?'':'locked'}" data-id="${l.id}" ${unlock?'':'disabled'}><span class="lw48-node">${done?'✓':l.id}</span><span><b>${esc(l.title)}</b><small>${l.level} · ${l.xp} XP</small></span><span class="lw48-lock">${unlock?(done?'★':'›'):'🔒'}</span></button>`}).join('');list.querySelectorAll('[data-id]').forEach(b=>b.onclick=()=>{current=+b.dataset.id;const [a,ls2]=langState();ls2.last=current;save(a);startIntro();map();if(innerWidth<861)$('#lw48-map').classList.remove('mobile-open')})}
