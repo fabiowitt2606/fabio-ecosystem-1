@@ -6,3 +6,19 @@
 /blog            /dachwerk/blog.html           200
 
 /sprachlernapp    /sprachlernapp/index.html    200
+
+# v65 robust LERNWERK language routes
+/sprachlernapp/de       /sprachlernapp/de/index.html       200
+/sprachlernapp/language-de       /sprachlernapp/de/index.html       200
+/sprachlernapp/en       /sprachlernapp/en/index.html       200
+/sprachlernapp/language-en       /sprachlernapp/en/index.html       200
+/sprachlernapp/fr       /sprachlernapp/fr/index.html       200
+/sprachlernapp/language-fr       /sprachlernapp/fr/index.html       200
+/sprachlernapp/es       /sprachlernapp/es/index.html       200
+/sprachlernapp/language-es       /sprachlernapp/es/index.html       200
+/sprachlernapp/it       /sprachlernapp/it/index.html       200
+/sprachlernapp/language-it       /sprachlernapp/it/index.html       200
+/sprachlernapp/ru       /sprachlernapp/ru/index.html       200
+/sprachlernapp/language-ru       /sprachlernapp/ru/index.html       200
+/sprachlernapp/pt       /sprachlernapp/pt/index.html       200
+/sprachlernapp/language-pt       /sprachlernapp/pt/index.html       200

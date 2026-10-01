@@ -1,0 +1,62 @@
+{
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/sprachlernapp/language-de",
+      "destination": "/sprachlernapp/de/"
+    },
+    {
+      "source": "/sprachlernapp/de",
+      "destination": "/sprachlernapp/de/index.html"
+    },
+    {
+      "source": "/sprachlernapp/language-en",
+      "destination": "/sprachlernapp/en/"
+    },
+    {
+      "source": "/sprachlernapp/en",
+      "destination": "/sprachlernapp/en/index.html"
+    },
+    {
+      "source": "/sprachlernapp/language-fr",
+      "destination": "/sprachlernapp/fr/"
+    },
+    {
+      "source": "/sprachlernapp/fr",
+      "destination": "/sprachlernapp/fr/index.html"
+    },
+    {
+      "source": "/sprachlernapp/language-es",
+      "destination": "/sprachlernapp/es/"
+    },
+    {
+      "source": "/sprachlernapp/es",
+      "destination": "/sprachlernapp/es/index.html"
+    },
+    {
+      "source": "/sprachlernapp/language-it",
+      "destination": "/sprachlernapp/it/"
+    },
+    {
+      "source": "/sprachlernapp/it",
+      "destination": "/sprachlernapp/it/index.html"
+    },
+    {
+      "source": "/sprachlernapp/language-ru",
+      "destination": "/sprachlernapp/ru/"
+    },
+    {
+      "source": "/sprachlernapp/ru",
+      "destination": "/sprachlernapp/ru/index.html"
+    },
+    {
+      "source": "/sprachlernapp/language-pt",
+      "destination": "/sprachlernapp/pt/"
+    },
+    {
+      "source": "/sprachlernapp/pt",
+      "destination": "/sprachlernapp/pt/index.html"
+    }
+  ]
+}

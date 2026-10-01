@@ -7,5 +7,5 @@ document.addEventListener("DOMContentLoaded",()=>{
 // ===== v43 training shortcut =====
 document.addEventListener("DOMContentLoaded",()=>{
   const a=document.getElementById("v43-training-link");if(!a)return;
-  try{const s=JSON.parse(localStorage.getItem("sprachwerkQuest")||"{}");const lang=["de","en","fr","es","it","ru","pt"].includes(s.lastLanguage)?s.lastLanguage:"en";a.href=`language-${lang}.html?tab=training`;}catch(e){}
+  try{const s=JSON.parse(localStorage.getItem("sprachwerkQuest")||"{}");const lang=["de","en","fr","es","it","ru","pt"].includes(s.lastLanguage)?s.lastLanguage:"en";a.href=`/sprachlernapp/${lang}/?tab=training`;}catch(e){}
 });
